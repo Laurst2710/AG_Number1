@@ -1,4 +1,8 @@
 {
-  "precision": "high",
-  "renderMode": "webgl2"
+  "instanceName": "AG_Number1",
+  "precision": 0.000001,
+  "renderMode": "local_hybrid",
+  "bufferSize": 4096,
+  "autoSync": true,
+  "logLevel": "verbose"
 }

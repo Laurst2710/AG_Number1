@@ -1,0 +1,52 @@
+# --- DEPENDENȚE ---
+# Nu se urcă pe GitHub deoarece sunt descărcate local prin npm/yarn
+node_modules/
+jspm_packages/
+package-lock.json
+yarn.lock
+
+# --- ARTFACTE DE BUILD ---
+# Fișierele generate automat în urma procesului de compilare/minificare
+dist/
+build/
+out/
+.antigravity/
+.next/
+bin/
+obj/
+
+# --- LOG-URI ȘI CACHE ---
+# Fișiere temporare de sistem și jurnale de erori
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+.stylelintcache
+.cache/
+
+# --- SECURITATE ȘI CONFIGURĂRI LOCALE ---
+# IMPORTANT: Nu urcați niciodată cheile API sau parolele pe GitHub
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.pnp.js
+.pnp.js.map
+
+# --- CONFIGURĂRI IDE / EDITOR ---
+# Setări specifice programului în care scrieți codul
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# --- SISTEM DE OPERARE ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini

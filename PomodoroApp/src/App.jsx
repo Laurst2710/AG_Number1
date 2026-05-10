@@ -56,8 +56,8 @@ function App() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-slate-950 text-slate-100 p-4 font-sans overflow-hidden">
       {/* Background Decorative Elements */}
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-500/10 rounded-full blur-[120px]" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-emerald-500/10 rounded-full blur-[120px]" />
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-orange-500/10 rounded-full blur-[120px]" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-rose-500/10 rounded-full blur-[120px]" />
 
       <div className="relative z-10 w-full max-w-md">
         <div className="bg-slate-900/40 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl space-y-8">
@@ -67,8 +67,8 @@ function App() {
             <h1 className="text-2xl font-bold tracking-tight text-slate-400 uppercase text-sm">Pomodoro Timer</h1>
             <div className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-colors duration-500 ${
               mode === 'focus' 
-                ? 'bg-indigo-500/10 text-indigo-400 border border-indigo-500/20' 
-                : 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
+                ? 'bg-orange-500/10 text-orange-400 border border-orange-500/20' 
+                : 'bg-rose-500/10 text-rose-400 border border-rose-500/20'
             }`}>
               {mode === 'focus' ? <Target size={16} /> : <Coffee size={16} />}
               {mode === 'focus' ? 'Focus Session' : 'Short Break'}
@@ -99,7 +99,7 @@ function App() {
                 strokeDashoffset={2 * Math.PI * 120 * (1 - progress / 100)}
                 strokeLinecap="round"
                 className={`transition-all duration-1000 ease-linear ${
-                  mode === 'focus' ? 'text-indigo-500' : 'text-emerald-500'
+                  mode === 'focus' ? 'text-orange-500' : 'text-rose-500'
                 }`}
               />
             </svg>
@@ -127,8 +127,8 @@ function App() {
                 isActive 
                   ? 'bg-slate-100 text-slate-900 hover:bg-white' 
                   : mode === 'focus' 
-                    ? 'bg-indigo-600 text-white hover:bg-indigo-500' 
-                    : 'bg-emerald-600 text-white hover:bg-emerald-500'
+                    ? 'bg-orange-600 text-white hover:bg-orange-500' 
+                    : 'bg-rose-600 text-white hover:bg-rose-500'
               }`}
             >
               {isActive ? <Pause size={32} fill="currentColor" /> : <Play size={32} fill="currentColor" />}
